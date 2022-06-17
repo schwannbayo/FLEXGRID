@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./bg-intro-desktop.png);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+}
+.container > div{
+    flex: 1;
+    padding: 0 20px;
+}
+h1{
+    font-size: 40px;
+    line-height: 50px;
+}
+p{
+    font-size: 15px;
+    opacity: 0.8;
+}
+.box{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.box p{
+    margin: 0;
+}
+.box-blue{
+    background-color: hsl(248, 32%, 49%);
+    padding: 20px;
+}
+.form-control{
+    position: relative;
+    margin-bottom: 30px;
+}
+input{
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    box-shadow: 0.5px 0.5px hsl(246, 25%, 77%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px 25px;
+    display: block;
+    width: 100%;
+}
+input:focus{
+    border: 1px solid hsl(248, 32%, 49%);
+    box-shadow: 0.5px 0.5px hsl(248, 32%, 49%);
+    outline: none;
+}
+button{
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 5px;
+    border: 1px solid hsl(154, 59%, 45%);
+    box-shadow: 0 2px hsl(154, 59%, 45%);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 15px 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 100%;
+}
+button:focus{
+    outline: none;
+}
+button:active{
+    transform: translateY(2px);
+    box-shadow: 0 0 hsl(154, 59%, 45%);
+}
+button:hover{
+    background-color: hsl(154, 55%, 64%);
+    color: #fff;
+}
+.form-control small{
+    opacity: 0;
+}
+.form-control.error small{
+    opacity: 1;
+}
+small{
+    display: block;
+    color: #bbb;
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+small a{
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+    text-decoration: none;
+}
+.error-icon{
+    position: absolute;
+    right: 3%;
+    top: 16%;
+    display: none;  
+}
+span.error{
+    color: hsl(0, 100%, 74%);
+    display: none;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+    position: relative;
+    left: 30%;
+}
+/*.form-control small{
+    color: hsl(0, 100%, 74%);
+    position: absolute;
+    font-weight: 600;
+    bottom: -24px;
+    right: 0;
+    opacity: 0;
+    text-align: right;
+}*/
